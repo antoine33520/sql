@@ -1,8 +1,8 @@
-SELECT e.first_name  ||' '||  e.last_name AS Employé, COUNT(r.reservation_id) AS Réservation
-FROM t_employee e
+SELECT *
+FROM (SELECT e.last_name ||' '|| e.first_name "Meilleur employée"
+FROM t_employee e 
 JOIN t_reservation r
-ON e.employee_id = r.employee_id
-GROUP BY (e.first_name  ||' '||  e.last_name)
-ORDER BY Réservation DESC;
-
-(ca affiche que le derniere samsoul)
+USING (employee_id)
+GROUP BY employee_id, e.last_name, e.first_name
+ORDER BY count (r.reservation_id)desc)
+WHERE ROWNUM <= 1 ;
