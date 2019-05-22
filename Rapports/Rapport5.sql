@@ -1,3 +1,9 @@
+-- Créez le rapport sur tous les trajets effectués par les trains OLVoyage. Affichez le numéro du train, le trajet qui est constitué de la ville de départ avec l’heure de départ et la ville d’arrivée avec l’heure d’arrivée, la distance parcourue et le prix initial.
+
+-- Exemple : Nice (24/03/19 08:00) – Brest (24/03/19 16:10)
+
+-- Triez les résultats par numéro du train.
+
 SELECT
   t.train_id,
   t.departure_time,

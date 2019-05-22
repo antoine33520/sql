@@ -1,3 +1,7 @@
+-- OLVoyage souhaite connaître son meilleur employé. Affichez le prénom et le nom de l’employé qui a enregistré le plus grand nombre de réservations.
+
+-- Si plusieurs employés ont le même nombre de réservations, vous les afficherez tous.
+
 SELECT *
 FROM (SELECT e.last_name ||' '|| e.first_name "Meilleur employée"
 FROM t_employee e 

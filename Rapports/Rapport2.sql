@@ -1,3 +1,5 @@
+-- Affichez le nom et le prénom des acheteurs qui ont payé des réservations ne contenant pas de billet à leur nom (donc pour quelqu’un d’autre). Triez les résultats par nom et prénom.
+
 SELECT concat('c.first_name' || ' ' || 'c.last_name') AS name, r.reservation_id from T_CUSTOMER c
 JOIN T_RESERVATION r
 ON r.buyer_id = c.customer_id
