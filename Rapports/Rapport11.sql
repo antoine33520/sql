@@ -2,9 +2,9 @@
 -- Indice
 -- Votre première jointure avec un produit cartésien attendu…et probablement la dernière.
 SELECT
-  train_id || '' || d.city || '-' || a.city "NOM TRAIN ",
-  pass_name "TITRE ",(t_train.price * discount_pct) / 100 "PRIX REDUIT ",
-  (t_train.price * discount_we_pct) / 100 "PRIX REDUIT WEEK -
+  train_id || '' || d.city || '-' || a.city "Nom du train ",
+  pass_name "TITRE ",(t_train.price * discount_pct) / 100 "Prix reduit ",
+  (t_train.price * discount_we_pct) / 100 "Prix reduit weekend -
 END "
 FROM
   T_TRAIN
