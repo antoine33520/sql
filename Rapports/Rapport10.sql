@@ -3,3 +3,19 @@
 -- Indice
 
 -- Vous allez faire une jointure entre six tables, donc vous aurez au moins cinq conditions de jointure.
+
+SELECT COUNT(r.reservation_id) "Janvier 2019 sénior pass :"
+FROM t_reservation r
+JOIN t_ticket t
+ON t.reservation_id=t.reservation_id
+JOIN t_wagon_train w
+ON t.wag_tr_id=w.wag_tr_id
+JOIN t_train t
+ON w.train_id=t.train_id
+JOIN t_customer c
+ON t.customer_id=c.customer_id
+JOIN t_pass p
+ON c.pass_id=p.pass_id
+WHERE discount_pct=40
+AND r.buy_method IS NOT NULL
+AND t.departure_time LIKE '__/%01/19%';
