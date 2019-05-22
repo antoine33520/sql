@@ -11,6 +11,6 @@ FROM
   JOIN t_customer c ON t.customer_id = c.customer_id
   JOIN t_pass p ON c.pass_id = p.pass_id
 WHERE
-  discount_pct = 40
+  p.pass_name='Senior'
   AND r.buy_method IS NOT NULL
   AND t.departure_time LIKE '__/%01/19%';
