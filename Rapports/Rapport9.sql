@@ -1,0 +1,1 @@
+-- Calculez la vitesse moyenne des trains. Utilisez l’affichage suivant : 90 km/h. Pour chacun des trains, vous afficherez son numéro et son nom au format Paris – Bordeaux.
