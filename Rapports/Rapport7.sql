@@ -1,5 +1,4 @@
--- Affichez le Top-5 des trains (les 5 premiers trains) par rapport aux nombres de billets réservés. Le train doit être affiché de manière suivante Paris – Brest.
-
+-- Affichez le Top-5 des trains (les 5 premiers trains) par rapport aux nombres de billets réservés. Le train doit être affichéde manière suivante Paris –Brest.
 SELECT
   *
 FROM

@@ -1,5 +1,4 @@
--- Quelle a été la première réservation effectuée ? Affichez son numéro, sa date de création, le nom et le prénom de l’employé et de l’acheteur.
-
+-- Quelle a étéla première réservation effectuée ? Affichez son numéro, sa date de création, le nom et le prénom de l’employéet de l’acheteur.
 SELECT
   r.reservation_id,
   r.creation_date,

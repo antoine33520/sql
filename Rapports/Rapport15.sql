@@ -1,7 +1,6 @@
--- Suite aux nombreux recrutements, OLVoyage souhaite établir un nouvel organigramme. 
--- Le nombre des réservations enregistrées par les employés doit suivre leur nom et leur prénom indentés. 
--- Etant donné que le dirigeant ne s’occupe pas des réservations, il ne doit pas apparaitre sur l’organigramme.
-
+-- Suite aux nombreux recrutements, OLVoyage souhaite établir un nouvel organigramme.
+-- Le nombre des réservations enregistrées par les employés doit suivre leur nom et leur prénom indentés.
+-- Etant donnéque le dirigeant ne s’occupe pas des réservations, il ne doit pas apparaitre sur l’organigramme.
 SELECT
   UPPER(e.last_name) || ' ' || e.first_name "NOM    Prénom",
   NVL(r.cr, 0) "Nb réservations"
