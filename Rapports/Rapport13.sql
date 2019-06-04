@@ -2,7 +2,6 @@
 -- Ne récupérez que les informations sur les réservations payées qui ont étéfaites 20 jours avant la date de départ du train.
 -- Ne prenez en compte que les trains qui partent entre le 15/04/2019 et le 25/04/2019.
 -- Triez les résultats par la date de la réservation.
-
 SELECT
   t.ticket_id,
   c.last_name,
