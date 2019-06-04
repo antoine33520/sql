@@ -7,5 +7,11 @@ SELECT
 FROM
   t_employee e
 WHERE
-    manager_id IN (SELECT employee_id FROM t_employee WHERE manager_id IS NULL
+  manager_id IN (
+    SELECT
+      employee_id
+    FROM
+      t_employee
+    WHERE
+      manager_id IS NULL
   );
