@@ -1,7 +1,7 @@
 -- Pour remercier ses coordinateurs de ventes, la sociétésouhaite augmenter leur salaire de $100. Affichez le numéro de l’employé, son nom et son prénom, ainsi que le salaire augmenté.
 -- Utilisez les sous-requêtes avancées.
 SELECT
-  e.last_name || ' ' || e.first_name " NOM_PRENOM ",
+  e.last_name || ' ' || e.first_name " NAME ",
   e.employee_id,
   e.salary + 100 " SALAIRE + 100 "
 FROM
